@@ -9,7 +9,8 @@
     }
 }
 
-div {
-    margin-top: -70px;
+.veritas {
     animation: 400ms ease fadeUp;
+    color:black; 
+    font-family: 'Noto Sans KR', sans-serif;
 }
