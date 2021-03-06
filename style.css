@@ -1,0 +1,16 @@
+@keyframes fadeUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.veritas {
+    animation: 400ms ease fadeUp;
+    color:black; 
+    font-family: 'Noto Sans KR', sans-serif;
+}
