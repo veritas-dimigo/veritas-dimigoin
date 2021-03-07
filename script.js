@@ -1,1 +1,1 @@
-alert("hello, world")
+window.open("http://www.yashvekaria.com", "_blank");

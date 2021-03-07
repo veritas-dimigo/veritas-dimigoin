@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&family=Noto+Sans+KR:wght@300;400;500&display=swap');
@@ -54,24 +53,56 @@
             color: #1E50BC;
             font-weight: 500;
         }
-        @media screen and (max-width: 1000px) {
-            .desktop {
+        /* 데스크탑 지원 */
+        @media screen and (min-width: 701px) {
+            .mobile {
+                display: none;
+            }
+            .fuckyou {
                 display: none;
             }
         }
-        @media screen and (min-width: 1001px;) {
+        /* 모바일 지원 */
+        @media screen and (max-width: 700px) {
+            .desktop {
+                display: none;
+            }
+            .fuckyou {
+                display: none;
+            }
+            .mobile {
+                font-size: 72%;
+                line-height: 1.8;
+            }
+            .mobile .content {
+                margin-right: 5%;
+                margin-left: 5%;
+            }
+        }
+        /* 아이폰 7이하는 취급 안 함 */
+        @media screen and (max-width: 374px) {
+            .desktop {
+                display: none;
+            }
             .mobile {
                 display: none;
+            }
+            .fuckyou {
+                display: block;
             }
         }
     </style>
 </head>
-
 <body>
-    <!-- 메인 -->
+    <!-- desktop -->
     <div class="desktop">
         <!-- 컨텐츠 -->
         <div>
+            <div style="text-align: center;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/o9GrBTXTivU" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe> <br> <br> <br> <br> <br>
+            </div>
             <!-- 해드 -->
             <div class="horizon">
                 - - - - - - - - - <br> <br> <br>
@@ -80,7 +111,7 @@
             <div class="header">
                 <br> <br>
                 새로움과 내일은 끝이 없다. <br>
-                너도 그렇다.<br> <br> <br>
+                너도 그렇다.<br> <br> <br> <br>
             </div>
             <div class="horizon">
                 - - - - - - - - -
@@ -117,7 +148,7 @@
                             src="https://github.com/veritas-dimigo/veritas-dimigoin/blob/main/images/%EB%AC%B4%EB%B0%B0%EA%B2%BDB-%ED%95%9C%EA%B8%80.png?raw=true"
                             alt=""> <br> <br>
                         베리타스는 교내 유일 <div class="bold">지식 공유 동아리</div>로 <br>
-                        작은 강연을 통해 <div class="bold">더 넓은 세상</div>을 만나고. <br>
+                        작은 강연을 통해 <div class="bold">더 넓은 세상</div>을 만나고, <br>
                         베리타스 프로젝트를 진행하며 <div class="bold">꿈을 향해 나아가는 활동</div>을 합니다.
                         <br> <br> <br> <br>
                         <br>
@@ -150,21 +181,123 @@
                     <div class="horizon">
                         - - - - - - - - -
                     </div> <br> <br>
-                    더 알아보고 싶다면, 여기로 와요. <br> <br>
-                    <a style="margin-left: -1.5%;" href="https://veritas.page"> <img
+                    더 알아보고 싶다면, 여기로 와요.
+                    <a class="notion" href="https://veritas.page"> <br> <br> <img
                             src="https://github.com/veritas-dimigo/veritas-dimigoin/blob/main/images/%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%203.png?raw=true"
-                            alt="" target="_blank"> </a> <br> <br>
-                    <div style="text-align: center;">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5uu9DahZiiY" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
+                            alt="" target="_blank" style="margin-left: -8px;"> </a> <br> <br>
                     <br> <br> <br>
-                    <div style="color: gray; text-align: center;">Copyright 2021. Veritas all rights reserved.</div>
+                    <div style="color: gray; text-align: center; font-size: 70%;">Copyright 2021. Veritas all rights
+                        reserved.</div>
                     <br> <br> <br>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- monbile -->
+    <div class="mobile">
+        <div style="text-align: center;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/o9GrBTXTivU" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe> <br> <br> <br> <br> <br>
+        </div>
+        <!-- 해드 -->
+        <div class="horizon">
+            - - - - - - - - - <br> <br> <br>
+        </div>
+        <!-- 해더 -->
+        <div class="header">
+            <br> <br>
+            새로움과 내일은 끝이 없다. <br>
+            너도 그렇다.<br> <br> <br> <br>
+        </div>
+        <div class="horizon">
+            - - - - - - - - -
+        </div>
+        <!-- 본문 컨테이너 -->
+        <div class="contanier">
+            <!-- 본문 -->
+            <div class="content">
+                <div style="font-weight: 500; display: inline;">르네상스</div>가 시작될 때 <br> 예술가, 철학자, 과학자들은 <br> 한 가문에 의해
+                이탈리아
+                피렌체에 모였습니다. <br> <br>
+                <img style="display: block; margin-left: auto; margin-right: auto; width: 70%;"
+                    src="https://github.com/veritas-dimigo/veritas-dimigoin/blob/main/images/Untitled.png?raw=true"
+                    alt=""> <br>
+                <br>
+                <div style="font-weight: 500; color: #1E50BC;">
+                    이들은 자신의 전문 분야에만 얽매이지 않고, <br>
+                    서로의 재능을 융합하며 <br> 엄청난 시너지를 만들어내었습니다. <br> <br>
+                </div>
+                그리하여 이탈리아는 <br> 많은 예술가와 철학자, 과학자와 함께 <br>
+                <div class="bold">새로운 시대</div>를 열게 된 르네상스를 <br> 맞이할 수 있었습니다. <br> <br>
+                가문의 이름인 메디치, 그 이름을 따서 이를 <br>
+                <div class="bold">메디치 효과</div>라고 부릅니다. <br>
+                <br>
+                <div class="bold">베리타스</div>는 바로 여기서 출발합니다. <br> <br>
+                <br>
+                <div class="quote"">
+                                다양한 생각과 지식을 가진 사람들이 모여 <br> 서로 나누다보면, <br>
+                                배우는 것은 그 이상이 될 것이다.
+                            </div>
+                            <br> <br> <br>
+                            <div class=" horizon">
+                    - - - - - - - - -
+                </div>
+                <br> <br> <br> <br>
+                <div style="text-align: center;">
+                    <img style="display: block; margin-left: auto; margin-right: auto; width: 35%;"
+                        src="https://github.com/veritas-dimigo/veritas-dimigoin/blob/main/images/%EB%AC%B4%EB%B0%B0%EA%B2%BDB-%ED%95%9C%EA%B8%80.png?raw=true"
+                        alt=""> <br> <br>
+                    베리타스는 교내 유일 <div class="bold">지식 공유 동아리</div>로 <br>
+                    작은 강연을 통해 <div class="bold">더 넓은 세상</div>을 만나고, <br>
+                    베리타스 프로젝트를 진행하며 <br>
+                    <div class="bold">꿈을 향해 나아가는 활동</div>을 합니다.
+                    <br> <br> <br> <br>
+                    <br>
+                    <br> <br> <br>
+                    <img style="display: block; margin-left: auto; margin-right: auto; width: 50%;"
+                        src="https://github.com/veritas-dimigo/veritas-dimigoin/blob/main/images/profiles.png?raw=true"
+                        alt="">
+                    <br> <br>
+                    <div class="blue">베리타스</div>라는 동아리는 <br> <br>
+                    <div class="bold">많은 것을 생각하고, 고민하는</div> 동아리입니다. <br>
+                    <div class="bold">원하는 것을 원하는 만큼 하는</div> 동아리입니다. <br>
+                    <div class="bold">누구를 위해서가 아닌, <br> 나를 위한 시간을 쓸 수 있는</div> 동아리입니다. <br>
+                    <br> <br> <br>
+                    그리고 <div class="blue">베리타스</div>는 <br> <br> <br>
+                    <br> <br>
+                    <div class="blue">꿈꾸는 모든 것을 다 이루는 동아리입니다.
+                    </div>
+                </div>
+                <br> <br> <br> <br>
+                <div class="horizon">
+                    - - - - - - - - -
+                </div>
+                <br> <br> <br> <br>
+                <img src="https://github.com/veritas-dimigo/veritas-dimigoin/blob/main/images/notion_landing.png?raw=true"
+                    alt=""> <br> <br> <br>
+                <div class="bold">열정</div>이 넘치고, <div class="bold">하고 싶은 게 많은</div> 당신. <br>
+                그리고, 그런 당신을 위한 <div class="bold">단 하나</div>의 동아리, <br>
+                <div class="blue">베리타스</div> <br> <br> <br>
+                <div style="font-weight: 500;  color: #1E50BC;">당신, 우리와 함께하지 않으실래요?</div> <br> <br> <br>
+                <div class="horizon">
+                    - - - - - - - - -
+                </div> <br> <br>
+                더 알아보고 싶다면, 여기로 와요. <br> <br>
+                <a class="notion2" style="margin-left: -2.5%;" href="https://veritas.page"> <img
+                        src="https://github.com/veritas-dimigo/veritas-dimigoin/blob/main/images/%E1%84%8B%E1%85%A1%E1%84%90%E1%85%B3%E1%84%87%E1%85%A9%E1%84%83%E1%85%B3%20%E2%80%93%202.png?raw=true"
+                        alt="" target="_blank" style="width: 300px;"> </a> <br> <br>
+                <br> <br> <br>
+                <div style="color: gray; text-align: center; font-size: 70%;">Copyright 2021. Veritas all rights
+                    reserved.</div>
+                <br> <br> <br>
+            </div>
+        </div>
+    </div>
+    <!-- fuckyou -->
+    <div class="fuckyou" style="text-align: center; margin-top: 40%; margin-bottom: 40%;">
+        이 페이지는 <br> 지금 이 <br> 기기를 <br> 지원하지 <br> 않습니다ㅠㅠㅜ <br> <br>
+        다른 <br> 모바일 or 데스크탑 <br> 기기로 와주세요.
+    </div>
 </body>
-
 </html>
