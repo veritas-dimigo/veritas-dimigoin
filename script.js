@@ -1,1 +1,0 @@
-window.open("http://www.yashvekaria.com", "_blank");
